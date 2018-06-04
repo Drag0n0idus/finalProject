@@ -1,8 +1,8 @@
 <?php
-// source: C:\xampp\htdocs\sandbox\app/config/config.neon 
-// source: C:\xampp\htdocs\sandbox\app/config/config.local.neon 
+// source: C:\xampp\htdocs\maturita\finalProject\web\app/config/config.neon 
+// source: C:\xampp\htdocs\maturita\finalProject\web\app/config/config.local.neon 
 
-class Container_b3e7d1ed40 extends Nette\DI\Container
+class Container_553b66611e extends Nette\DI\Container
 {
 	protected $meta = [
 		'types' => [
@@ -149,12 +149,12 @@ class Container_b3e7d1ed40 extends Nette\DI\Container
 	{
 		$this->parameters = $params;
 		$this->parameters += [
-			'appDir' => 'C:\xampp\htdocs\sandbox\app',
-			'wwwDir' => 'C:\xampp\htdocs\sandbox\www',
+			'appDir' => 'C:\xampp\htdocs\maturita\finalProject\web\app',
+			'wwwDir' => 'C:\xampp\htdocs\maturita\finalProject\web\www',
 			'debugMode' => true,
 			'productionMode' => false,
 			'consoleMode' => false,
-			'tempDir' => 'C:\xampp\htdocs\sandbox\app/../temp',
+			'tempDir' => 'C:\xampp\htdocs\maturita\finalProject\web\app/../temp',
 		];
 	}
 
@@ -272,7 +272,7 @@ class Container_b3e7d1ed40 extends Nette\DI\Container
 
 	public function createServiceApplication__presenterFactory(): Nette\Application\IPresenterFactory
 	{
-		$service = new Nette\Application\PresenterFactory(new Nette\Bridges\ApplicationDI\PresenterFactoryCallback($this, 5, 'C:\xampp\htdocs\sandbox\app/../temp/cache/Nette%5CBridges%5CApplicationDI%5CApplicationExtension'));
+		$service = new Nette\Application\PresenterFactory(new Nette\Bridges\ApplicationDI\PresenterFactoryCallback($this, 5, 'C:\xampp\htdocs\maturita\finalProject\web\app/../temp/cache/Nette%5CBridges%5CApplicationDI%5CApplicationExtension'));
 		$service->setMapping(['*' => 'App\*Module\Presenters\*Presenter']);
 		return $service;
 	}
@@ -280,14 +280,14 @@ class Container_b3e7d1ed40 extends Nette\DI\Container
 
 	public function createServiceCache__journal(): Nette\Caching\Storages\IJournal
 	{
-		$service = new Nette\Caching\Storages\SQLiteJournal('C:\xampp\htdocs\sandbox\app/../temp/cache/journal.s3db');
+		$service = new Nette\Caching\Storages\SQLiteJournal('C:\xampp\htdocs\maturita\finalProject\web\app/../temp/cache/journal.s3db');
 		return $service;
 	}
 
 
 	public function createServiceCache__storage(): Nette\Caching\IStorage
 	{
-		$service = new Nette\Caching\Storages\FileStorage('C:\xampp\htdocs\sandbox\app/../temp/cache',
+		$service = new Nette\Caching\Storages\FileStorage('C:\xampp\htdocs\maturita\finalProject\web\app/../temp/cache',
 			$this->getService('cache.journal'));
 		return $service;
 	}
@@ -369,7 +369,7 @@ class Container_b3e7d1ed40 extends Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_b3e7d1ed40 $container)
+			public function __construct(Container_553b66611e $container)
 			{
 				$this->container = $container;
 			}
@@ -378,7 +378,7 @@ class Container_b3e7d1ed40 extends Nette\DI\Container
 			public function create(): Latte\Engine
 			{
 				$service = new Latte\Engine;
-				$service->setTempDirectory('C:\xampp\htdocs\sandbox\app/../temp/cache/latte');
+				$service->setTempDirectory('C:\xampp\htdocs\maturita\finalProject\web\app/../temp/cache/latte');
 				$service->setAutoRefresh(true);
 				$service->setContentType('html');
 				Nette\Utils\Html::$xhtml = false;

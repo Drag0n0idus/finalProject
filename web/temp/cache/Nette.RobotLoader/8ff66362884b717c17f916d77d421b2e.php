@@ -27,11 +27,6 @@ return array (
       'file' => 'C:\\xampp\\htdocs\\maturita\\finalProject\\web\\app\\model\\UserManager.php',
       'time' => 1522699088,
     ),
-    'App\\Presenters\\AchievementsPresenter' => 
-    array (
-      'file' => 'C:\\xampp\\htdocs\\maturita\\finalProject\\web\\app\\presenters\\AchievementsPresenter.php',
-      'time' => 1525709566,
-    ),
     'App\\Presenters\\BasePresenter' => 
     array (
       'file' => 'C:\\xampp\\htdocs\\maturita\\finalProject\\web\\app\\presenters\\BasePresenter.php',
@@ -47,11 +42,6 @@ return array (
       'file' => 'C:\\xampp\\htdocs\\maturita\\finalProject\\web\\app\\presenters\\ErrorPresenter.php',
       'time' => 1522699088,
     ),
-    'App\\Presenters\\GarmesPresenter' => 
-    array (
-      'file' => 'C:\\xampp\\htdocs\\maturita\\finalProject\\web\\app\\presenters\\GarmesPresenter.php',
-      'time' => 1525709560,
-    ),
     'App\\Presenters\\HomepagePresenter' => 
     array (
       'file' => 'C:\\xampp\\htdocs\\maturita\\finalProject\\web\\app\\presenters\\HomepagePresenter.php',
@@ -61,11 +51,6 @@ return array (
     array (
       'file' => 'C:\\xampp\\htdocs\\maturita\\finalProject\\web\\app\\presenters\\SignPresenter.php',
       'time' => 1522699088,
-    ),
-    'App\\Presenters\\InventoryPresenter' => 
-    array (
-      'file' => 'C:\\xampp\\htdocs\\maturita\\finalProject\\web\\app\\presenters\\UsersPresenter.php',
-      'time' => 1528007462,
     ),
     'App\\RouterFactory' => 
     array (

@@ -1,9 +1,9 @@
 <?php
-// source: C:\xampp\htdocs\sandbox\app\presenters/templates/@layout.latte
+// source: C:\xampp\htdocs\maturita\finalProject\web\app\presenters/templates/@layout.latte
 
 use Latte\Runtime as LR;
 
-class Templateb2654e0121 extends Latte\Runtime\Template
+class Templatee0fcb6617b extends Latte\Runtime\Template
 {
 	public $blocks = [
 		'head' => 'blockHead',
