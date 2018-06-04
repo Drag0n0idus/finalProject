@@ -1,0 +1,71 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24.4.2018, 8:38:02
+    Author     : student
+*/
+@font-face { font-family: Alieron; src: url('fonts/Alireon/Alireon-Regular.otf'); }
+
+body{
+  color: #41b98b;
+  font-family: Alireon, sans-serif;
+}
+
+header {
+    border: 2px solid #41b98b;
+    border-radius: 5px;
+    border-style: outset;
+}
+
+.panel-default {
+    border: 2px solid #41b98b;
+    border-radius: 5px;
+    border-style: outset;
+    text-align: center;
+}
+
+.panel-default>.panel-heading {
+    background-color: #373737;
+    color: #41b98b;
+}
+
+.panel-default>.panel-body {
+    background-color: #666666;
+    color: #41b98b;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+a {
+    color: #41b98b;
+}
+
+/* unvisited link */
+a:link {
+    color: #41b98b;
+}
+
+/* visited link */
+a:visited {
+    color: #14392b;
+}
+
+/* mouse over link */
+a:hover {
+    color: #2e8463;
+}
+
+/* selected link */
+a:active {
+    color: #42bd8e;
+}

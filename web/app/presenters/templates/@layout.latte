@@ -1,0 +1,45 @@
+{**
+ * @param string   $basePath web base path
+ * @param array    $flashes  flash messages
+ *}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>{ifset title}{include title|stripHtml} | {/ifset}Nette Sandbox</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">        
+	<link rel="stylesheet" href="{$basePath}/css/homeStyle.css">
+	{block head}{/block}
+</head>
+
+<body style='background-image: url("{$basePath}/images/debut_dark.png")'>
+        <header class="jumbotron text-center container" style='background-image: url("{$basePath}/images/debut_dark.png")'>
+                <h1>ACHIEVEMENT UNLOCKED</h1>
+                <hr>
+                <p>Welcome to Achievement Unlocked - The only Cheevo web page you'll ever need.</p>
+        </header>    
+        <main class="container">
+	<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+
+	{include content}
+        </main>
+	{block scripts}
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>        
+	<script src="{$basePath}/js/main.js"></script>
+	{/block}
+        <footer class='text-center container footer'>
+            <hr>
+            <p>&copy; 2018 František 'FreSsh' Lukeš & Richard 'Drag0n0idus' Míček, SŠPU Opava</p>
+            <p>&copy; 2017 Valve Corporation. All rights reserved. Valve, the Valve logo, Half-Life, the Half-Life logo, 
+                the Lambda logo, Steam, the Steam logo, Team Fortress, the Team Fortress logo, Opposing Force, 
+                Day of Defeat, the Day of Defeat logo, Counter-Strike, the Counter-Strike logo, Source, the Source logo, 
+                Counter-Strike: Condition Zero, Portal, the Portal logo, Dota, the Dota 2 logo, and Defense of the Ancients 
+                are trademarks and/or registered trademarks of Valve Corporation. All other trademarks are property of their respective owners.</p>
+        </footer>
+</body>
+</html>
